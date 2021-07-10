@@ -1,0 +1,289 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+main {
+    width: 320px;
+    min-width: 320px;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+header {
+    width: 100vw;
+    background-color: #d14b4b;
+
+}
+
+header h1 {
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+section h2 {
+    margin-top: 30px;
+
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #B0B4B9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid red;
+
+}
+
+
+
+form fieldset {
+    margin-top: 2px;
+    border: none;
+
+}
+
+form .contact-info .fields {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+form fieldset legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+form .contact-info legend {
+    width: 100%;
+    margin-top: 2px;
+    padding: 15px 0px;
+    border-top: 1px solid red;
+
+}
+
+
+
+form label,
+p {
+    margin-bottom: 8px;
+    color: #6F7B88;
+    font-size: .9rem;
+}
+
+select {
+    padding: 0px;
+    margin: 0px;
+    appearance: none;
+    color: black;
+
+
+}
+
+
+input,
+select {
+
+    padding: 0px 10px;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    text-align: right;
+    color: #C8CBCD;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    height: auto;
+}
+
+form .fields+.fields {
+    margin-top: 15px;
+
+}
+
+form input,
+form select,
+textarea {
+    height: 50px;
+    background-color: #EFF0F1;
+    border: none;
+    border-radius: 3px;
+}
+
+form input:focus,
+form select:focus {
+
+    border: 3px solid #033970;
+    transition: all 2s ease-in-out;
+}
+
+option::selection {
+    color: #EFF0F1;
+
+}
+
+#zipcode {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+.newsletter-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.newsletter-info legend {
+    width: 100%;
+    padding: 30px 0px 15px 0px;
+    border-top: 1px solid red;
+}
+
+.newsletter-info label {
+    margin-bottom: 15px;
+    vertical-align: bottom;
+
+}
+
+.format-label {
+    margin-top: 20px;
+}
+
+
+.newsletter-info fieldset label {
+    display: block;
+}
+
+.newsletter-info fieldset input+label {
+    margin-left: 15px;
+    display: inline;
+    vertical-align: unset;
+}
+
+.newsletter-info fieldset input {
+    vertical-align: middle;
+}
+
+.newsletter-info p {
+    margin: 20px 0px;
+
+    text-align: left;
+
+}
+
+.newsletter-info textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+
+
+
+button {
+    height: 60px;
+    margin-bottom: 35px;
+    padding: 7px 0px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    background-color: #f56d44;
+    color: white;
+
+}
+
+main p {
+    margin-bottom: 30px;
+    font-size: .9rem;
+    text-align: center;
+    font-style: italic;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    main {
+        width: 768px;
+        min-width: 768px;
+        margin: 0px auto;
+        padding: 10px;
+    }
+
+
+
+    section h2 {
+        margin-top: 60px;
+
+
+    }
+
+    section p {
+        margin-bottom: 60px;
+
+    }
+
+    form .contact-info {
+        padding-bottom: 30px;
+    }
+
+    form .contact-info .fields {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    form .contact-info .fields label {
+        width: 25%;
+    }
+
+    form .contact-info .fields input,
+    form .contact-info .fields select {
+        flex: 1;
+
+    }
+
+    form .contact-info legend {
+        padding: 50px 0px;
+
+
+    }
+
+    #zipcode {
+        width: 25%;
+    }
+
+
+
+}
