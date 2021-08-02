@@ -111,8 +111,15 @@ select {
     font-size: 1rem;
 }
 
-input::placeholder {
+#full-name::placeholder,
+#email::placeholder {
     text-align: right;
+    color: #C8CBCD;
+    font-style: italic;
+}
+
+input::placeholder {
+    text-align: left;
     color: #C8CBCD;
 }
 
@@ -205,6 +212,7 @@ option::selection {
     width: 100%;
     height: 100px;
     margin-bottom: 30px;
+    padding: 10px 10px;
 }
 
 
@@ -260,18 +268,25 @@ main p {
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: baseline;
     }
+
 
     form .contact-info .fields label {
         width: 25%;
     }
 
-    form .contact-info .fields input,
-    form .contact-info .fields select {
-        flex: 1;
+    label[for="zipcode"] {
+        width: 19.9% !important;
+    }
 
+
+
+
+    form .contact-info .fields>input,
+    form .contact-info .fields>select {
+        width: 100%;
     }
 
     form .contact-info legend {
@@ -280,7 +295,9 @@ main p {
 
     }
 
+
     #zipcode {
+
         width: 25%;
     }
 
